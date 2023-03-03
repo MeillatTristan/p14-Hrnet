@@ -1,0 +1,120 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 420px;
+  width: 50%;
+  gap: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px;
+
+  .formGroup {
+    background-color: $black-color-20;
+    border-radius: 5px;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+
+    label{
+      color: $black-color-50;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 5px 0;
+      font-size: 16px;
+    }
+
+    .react-date-picker__wrapper {
+      border: none;
+      cursor: pointer;
+    }
+
+    .react-date-picker__button .react-date-picker__button__icon {
+      transition: 0.25s;
+      stroke: $black-color-50;
+    }
+
+    .react-date-picker__button:enabled:hover .react-date-picker__button__icon {
+      stroke: $primary-color;
+    }
+
+    select {
+      border: none;
+      background-color: transparent;
+    }
+  }
+  
+  fieldset {
+    border: none;
+    margin-top: 25px;
+
+    legend {
+      color: $black-color-50;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .formGroup {
+      margin-top: 20px;
+    }
+  }
+
+  
+
+  .react-select__control {
+    border: none !important;
+    border-color: transparent !important;
+    outline: none !important;
+    background-color: transparent;
+    box-shadow: none;
+
+    .react-select__value-container {
+      padding: 2px;
+
+      .react-select__placeholder,
+      .react-select__single-value {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .react-select__option {
+    font-size: 14px;
+  }
+
+  .react-select__option:hover,
+  .react-select__option:focus,
+  .react-select__option--is-focused{
+    background-color: $primary-color-50;
+  }
+
+  .react-select__option--is-selected{
+    background-color: $secondary-color;
+  }
+
+  .containerSubmit {
+    display: flex;
+    justify-content: center;
+
+    .submitButton {
+      padding: 10px 25px;
+      background-color: $primary-color;
+      color: white;
+      border: solid 4px $primary-color;
+      font-size: 17px;
+      border-radius: 2px;
+      font-weight: 600;
+      transition: 0.25s all ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+        color: $primary-color;
+      }
+    }
+  }
+}

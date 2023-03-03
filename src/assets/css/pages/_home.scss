@@ -1,0 +1,11 @@
+@import "../utils/variables";
+
+.home {
+  padding: 50px 5%;
+  
+  &__containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

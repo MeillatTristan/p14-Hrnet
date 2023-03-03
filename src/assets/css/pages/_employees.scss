@@ -1,0 +1,14 @@
+.containerEmployee {
+  padding: 0 5%;
+  .containerTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}

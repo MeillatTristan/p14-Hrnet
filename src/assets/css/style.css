@@ -1,0 +1,205 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Document
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  background-color: #f8fbf7;
+  font-size: 10px;
+}
+
+a {
+  color: #001219;
+}
+
+.header {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.header__left__logo h1 {
+  color: #5a6f08;
+  font-size: 3.7rem;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__right__link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+}
+.header__right__link::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #93ad18;
+  transition: 0.4s all ease-out;
+}
+.header__right__link:hover::after {
+  width: 100%;
+}
+
+.home {
+  padding: 50px 5%;
+}
+.home__containerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerEmployee {
+  padding: 0 5%;
+}
+.containerEmployee .containerTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.containerEmployee .containerTitle h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.title {
+  color: #001219;
+  font-size: 3rem;
+  position: relative;
+  width: max-content;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #93ad18;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 420px;
+  width: 50%;
+  gap: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 50px;
+}
+.form .formGroup {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form .formGroup label {
+  color: #80888d;
+  font-size: 13px;
+  font-weight: 600;
+}
+.form .formGroup input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.form .formGroup .react-date-picker__wrapper {
+  border: none;
+  cursor: pointer;
+}
+.form .formGroup .react-date-picker__button .react-date-picker__button__icon {
+  transition: 0.25s;
+  stroke: #80888d;
+}
+.form .formGroup .react-date-picker__button:enabled:hover .react-date-picker__button__icon {
+  stroke: #5a6f08;
+}
+.form .formGroup select {
+  border: none;
+  background-color: transparent;
+}
+.form fieldset {
+  border: none;
+  margin-top: 25px;
+}
+.form fieldset legend {
+  color: #80888d;
+  font-weight: 600;
+  font-size: 18px;
+}
+.form fieldset .formGroup {
+  margin-top: 20px;
+}
+.form .react-select__control {
+  border: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+  background-color: transparent;
+  box-shadow: none;
+}
+.form .react-select__control .react-select__value-container {
+  padding: 2px;
+}
+.form .react-select__control .react-select__value-container .react-select__placeholder,
+.form .react-select__control .react-select__value-container .react-select__single-value {
+  font-size: 16px;
+}
+.form .react-select__option {
+  font-size: 14px;
+}
+.form .react-select__option:hover,
+.form .react-select__option:focus,
+.form .react-select__option--is-focused {
+  background-color: #c7da7c;
+}
+.form .react-select__option--is-selected {
+  background-color: #93ad18;
+}
+.form .containerSubmit {
+  display: flex;
+  justify-content: center;
+}
+.form .containerSubmit .submitButton {
+  padding: 10px 25px;
+  background-color: #5a6f08;
+  color: white;
+  border: solid 4px #5a6f08;
+  font-size: 17px;
+  border-radius: 2px;
+  font-weight: 600;
+  transition: 0.25s all ease-in-out;
+  cursor: pointer;
+}
+.form .containerSubmit .submitButton:hover {
+  background-color: white;
+  color: #5a6f08;
+}
+
+/*# sourceMappingURL=style.css.map */

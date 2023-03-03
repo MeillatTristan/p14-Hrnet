@@ -1,0 +1,44 @@
+@import "../utils/variables";
+
+.header {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  &__left {
+    &__logo {
+      h1 {
+        color: $primary-color;
+        font-size: 3.7rem;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__link {
+      font-size: 1.8rem;
+      font-weight: 500;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background-color: $secondary-color;
+        transition: 0.4s all ease-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
